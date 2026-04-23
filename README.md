@@ -2,6 +2,8 @@
 
 A Next.js web app for booking time slots with service providers at pre-defined shops. Authenticated users browse shops, pick a provider, and reserve an available hour, with a strict conflict guard that prevents the same `(shop, provider, time)` from being double-booked.
 
+![screenshot](./docs/image%20copy.png)
+
 ## Stack
 
 | Concern   | Tool                                                    |
