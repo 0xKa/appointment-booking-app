@@ -9,13 +9,13 @@ export default function ShopsPage() {
       <p className="text-muted-foreground mb-8">Browse shops to book your next appointment</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {SHOPS.map((shop) => (
-          <Link key={shop.id} href={`/shops/${shop.id}`} className="group">
-            <Card className="h-full transition-colors group-hover:border-foreground">
+          <Link key={shop.id} href={`/shops/${shop.id}`} className="group block h-full">
+            <Card className="h-full flex flex-col transition-colors group-hover:border-foreground">
               <CardHeader>
                 <CardTitle>{shop.name}</CardTitle>
                 <CardDescription>{shop.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <p className="text-sm text-muted-foreground">
                   {shop.providers.length} service provider{shop.providers.length === 1 ? "" : "s"}
                 </p>
